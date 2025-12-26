@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}About - Django App{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h1>📚 Tentang Aplikasi Ini</h1>
+    
+    <div style="margin-top: 2rem;">
+        <h2 style="color: #667eea; margin-bottom: 1rem;">Teknologi yang Digunakan</h2>
+        <ul style="color: #666; line-height: 2;">
+            <li><strong>Python:</strong> Bahasa pemrograman utama</li>
+            <li><strong>Django:</strong> Framework web yang powerful</li>
+            <li><strong>SQLite:</strong> Database default untuk development</li>
+            <li><strong>Django CORS Headers:</strong> Untuk API cross-origin</li>
+        </ul>
+    </div>
+    
+    <div style="margin-top: 2rem; padding: 1.5rem; background: #f0f7ff; border-left: 4px solid #667eea; border-radius: 4px;">
+        <p style="color: #444;">
+            <strong>💡 Tips:</strong> Aplikasi ini menggunakan struktur project Django modern dengan 
+            konfigurasi terpisah dan aplikasi modular. Anda dapat menambahkan aplikasi baru dengan 
+            perintah <code>python manage.py startapp nama_app</code>.
+        </p>
+    </div>
+    
+    <div style="margin-top: 2rem;">
+        <a href="{% url 'core:home' %}" style="display: inline-block; padding: 0.75rem 1.5rem; background: #667eea; color: white; text-decoration: none; border-radius: 5px;">
+            ← Kembali ke Home
+        </a>
+    </div>
+</div>
+{% endblock %}
