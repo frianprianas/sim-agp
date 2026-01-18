@@ -14,6 +14,7 @@
         <template v-else>
           <router-link to="/profile" class="nav-link">Ubah Email & Password</router-link>
         </template>
+        <router-link to="/settings" class="nav-link">Pengaturan</router-link>
         <button @click="handleLogout" class="btn btn-danger btn-sm">Logout</button>
       </div>
     </div>
